@@ -11,8 +11,11 @@ function App() {
 
   const addValue = ()=>{
     if(counter < 20){
-      counter++;
-    setCounter(counter)
+      // counter++;
+      setCounter((prevCounter) => prevCounter +1)
+      setCounter((prevCounter) => prevCounter +1)
+      setCounter((prevCounter) => prevCounter +1)
+      setCounter((prevCounter) => prevCounter +1)
     }
     else{
       alert("value can not exceed 20")
@@ -22,8 +25,8 @@ function App() {
 
   const removeValue = ()=>{
     if(counter > 0){
-      counter--;
-    setCounter(counter)
+      // counter--;
+    setCounter(counter-1)
     }  else{
       alert("value can not go below 0")
     }
